@@ -1,24 +1,24 @@
 ---
 layout: post
-title:  "2019年终总结"
+title:  "从学生到上班族"
 author: "marcelyz"
 ---
 
-Tale is a minimal [Jekyll](https://jekyllrb.com/) theme curated for storytellers. It is designed and developed by [myself](https://github.com/chesterhow/) for a friend who writes short stories.
+2019已经结束，这一年我的学生身份暂时告一段落，在一家关于医美的互联网公司开始了职业生涯。2020年初跟以往不太一样，[科比的百度百科词条](https://baike.baidu.com/item/%E7%A7%91%E6%AF%94%C2%B7%E5%B8%83%E8%8E%B1%E6%81%A9%E7%89%B9/318773?fromtitle=%E7%A7%91%E6%AF%94&fromid=133066&fr=aladdin)变灰，武汉肺炎影响范围持续扩大，我们不得不在家办公，在此记录一下。
 
-## Tale features
-- Compatible with GitHub Pages
-- Responsive design (looks just as good on mobile)
-- Syntax highlighting, with the help of Pygments
-- Markdown and HTML text formatting
-- Pagination of posts
+## 初入职场
+毕业之后，我抛弃学习了7年的生物专业，转行到了计算机方向，目前来说，我对自己的这个选择还是满意的。实习加上正式工作的一年多时间，让我知道了互联网公司里的技术、产品、运营、商务、财务、人力等是干什么的，技术里的前端、后端、数据、策略、运维等是干什么的，也接触到了python、scala、spark、hive、mysql、redis、api、kafka、airflow等代码工具，对代码中的模块化、可读性、性能优化等知识点有了更深刻的认识。我在这家医美公司主要负责推荐算法，尝试并落地了cf、lr、gbdt、ffm、node2vec、esmm和用户画像等算法，对首页feed的ctr和dwell都有了很大的提升。
 
-Head over to the [Example Content]({{ site.baseurl }}/2017-03-16/example-content) post for a showcase of Tale's text formatting features.
+不过现在反思一下，这些指标的衡量标准还有待改进，首先在数据层面上，数据是构建模型和分析指标的基础，爬虫的数据有没有清洗干净，历史埋点出错的数据有没有回溯，有没有区分不同渠道，埋点有没有出现丢失等。其次是分析维度上，是分析同比还是环比，周期设置为多少，在医美行业，秋冬季的成单率是否一定大于春夏季等，新老用户、不同端用户的指标有何异同。最后产品活动、ui改变、投放日、节假日等都可能对指标造成巨大的影响，怎么分析它们和模型本身对指标的作用。当数据量小的时候，指标波动的非常厉害，给分析人员增加了很大的困难，因此，选择一家数据量大且重视数据的公司对算法人员至关重要。
 
-## Browser Support
-Tale works on most if not all modern browsers, including Chrome, Safari and Firefox 👍🏼
+另一方面，怎么评估模型的好坏，auc能否说明问题，怎么向老板解释，怎么做一个健壮的方便迭代的模型架构；针对不同业务场景，训练数据的选取，特征工程的做法都千差万别。模型上线后，怎么做serving，实时预测有延迟怎么办。后续怎么根据业务指标去迭代优化等，这些方面我去年做的都不够好。
 
-## Download or Contribute
-Tale is publicly hosted on GitHub, so go ahead and download or fork it at the [GitHub repository](https://github.com/chesterhow/tale). If you spot any bugs or have any suggestions, feel free to create an issue or make a pull request.
+## 后期规划
+年初我也开始了新的职业生涯，主要负责广告场景，定一些目标吧
+- 做好1-2个项目，包括模型原理、业务场景、特征工程、迭代优化、指标分析、优缺点等，不浮于表面
+- 强身健体，比如保护好胃、鼻子等，多健身
+- 多了解自己一点
 
-Thanks for checking out Tale!
+## 个人感悟
+这是我的第一篇博客，随便写写吧，希望疫情早点结束。<br>
+24行的markdown文件，科比RIP。
