@@ -21,4 +21,4 @@ author: "marcelyz"
 
 ## 个人感悟
 这是我的第一篇博客，随便写写吧，希望疫情早点结束。<br>
-24行的markdown文件，科比RIP。
+24行的markdown文件，*Kobe Bean Bryant* RIP。
