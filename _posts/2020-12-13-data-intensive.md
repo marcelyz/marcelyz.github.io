@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  "设计数据密集型应用-2017"
-author: "marcelyz"
+author: "_marcelyz"
 ---
 
 ## 序言
 
 ## 第一部分：数据系统的基石
+
+### 第一章： 可靠性、可扩展性、可维护性
 
 ## 第二部分：分布式数据
 
