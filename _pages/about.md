@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "About"
-author: "marcelyz"
+author: "_marcelyz"
 permalink: /about/
 ---
 
@@ -12,7 +12,7 @@ permalink: /about/
 - 支付宝：18800110232
 
 ### **工作经历**
-- 2020.01-至今：[京东](https://www.jd.com/)，广告算法
+- 2020.01-至今：[京东](https://www.jd.com/)，广告效果
 - 2018.08-2020.01：[更美](https://www.igengmei.com/)，推荐算法
 - 2018.02-2018.07：[数美](https://www.ishumei.com/)，文本过滤
 
