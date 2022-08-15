@@ -13,3 +13,5 @@ author: "marcelyz"
 - lag和lead函数<br>
 答：lag和lead函数是跟偏移量相关的窗口函数，通过这两个函数可以在一次查询中取出同一字段的前N行(lag)和后N行(lead)的数据，使用over指定范围，里面可以使用partition by指定分组，使用order by指定排序。语法lead(field, num, defaultvalue)；常见题有求股票的波峰和波谷。https://blog.csdn.net/godlovedaniel/article/details/118946573。还有求连续n天登录的用户。https://www.modb.pro/db/60280
 
+- having关键字  
+答：通常where语句是在group by之前做数据筛选的，而having语句是对group by之后的结果进行筛选的。
