@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "leetcode-curated-sql"
+author: "marcelyz"
+---
+
 # 586. Customer Placing the Largest Number of Orders(Easy)
 Table: Orders  
 ```
