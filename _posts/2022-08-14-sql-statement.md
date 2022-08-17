@@ -64,3 +64,15 @@ SELECT b.user_name
 WHERE b.date IS NOT NULL
   AND date_sub(cast(b.date AS date,6)) = cast(b.date_7 AS date)
 ```
+
+# 求不同性别每日分数累加和
+https://blog.csdn.net/qq_21201267/article/details/107452243
+```
+SELECT gender,
+       DAY,
+       sum(score_points) over (partition BY gender
+                               ORDER BY DAY) total
+FROM Scores
+ORDER BY gender,
+         DAY
+```
