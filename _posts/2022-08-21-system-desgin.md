@@ -17,3 +17,10 @@ author: "marcelyz"
     4. high level系统整体设计  
     5. 数据存储设计  
     6. 系统可拓展性设计  
+
+- 设计twitter
+
+- 设计youtube/bilibili
+
+- 设计爬虫系统
+
