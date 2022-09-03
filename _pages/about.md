@@ -9,7 +9,6 @@ permalink: /about/
 - 电话：18800110232
 - 微信：marcelyz1120
 - 邮箱：gaoyazhe1994@gmail.com
-- 支付宝：18800110232
 
 ### **工作经历**
 - 2020.01-至今：[京东](https://www.jd.com/)，广告效果
