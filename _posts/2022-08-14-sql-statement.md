@@ -53,7 +53,7 @@ FROM
 WHERE res IS NOT NULL
 ```
 
-# 求连续n天登录的用户
+# 求连续7天登录的用户
 https://www.modb.pro/db/60280
 窗口函数之lag和lead
 ```
