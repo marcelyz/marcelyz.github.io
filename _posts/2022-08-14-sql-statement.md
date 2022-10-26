@@ -28,7 +28,7 @@ GROUP BY project_id HAVING count(employee_id) =
 ```
 
 # 求股票的波峰和波谷
-https://blog.csdn.net/godlovedaniel/article/details/118946573
+https://blog.csdn.net/godlovedaniel/article/details/118946573  
 窗口函数之lag和lead
 ```
 SELECT *
@@ -53,9 +53,8 @@ FROM
 WHERE res IS NOT NULL
 ```
 
-# 求连续7天登录的用户
-https://zhuanlan.zhihu.com/p/460403450
-窗口函数
+# lc_1454. 求连续7天登录的用户
+https://zhuanlan.zhihu.com/p/460403450  
 ```
 SELECT user_id
 FROM
@@ -75,7 +74,7 @@ GROUP BY user_id,
          base_dt HAVING count(1) >= 7;
 ```
 
-# 求不同性别每日分数累加和
+# lc_1308. 求不同性别每日分数累加和
 https://blog.csdn.net/qq_21201267/article/details/107452243
 ```
 SELECT gender,
