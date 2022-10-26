@@ -54,15 +54,25 @@ WHERE res IS NOT NULL
 ```
 
 # 求连续7天登录的用户
-https://www.modb.pro/db/60280
-窗口函数之lag和lead
+https://zhuanlan.zhihu.com/p/460403450
+窗口函数
 ```
-SELECT b.user_name
-  (SELECT user_name,date, lead(date,6) over(partition BY user_name
-                                            ORDER BY date DESC) AS date_7
-   FROM user_login_table) b
-WHERE b.date IS NOT NULL
-  AND date_sub(cast(b.date AS date,6)) = cast(b.date_7 AS date)
+SELECT user_id
+FROM
+  (SELECT *,
+          date_sub(t2.dt, interval rn DAY) AS base_dt
+   FROM
+     (SELECT *,
+             row_number() over(partition BY t1.user_id
+                               ORDER BY t1.dt) AS rn
+      FROM
+        (SELECT user_id,
+                substring(dt, 1, 10) AS dt
+         FROM log_table
+         GROUP BY user_id,
+                  substring(dt, 1, 10) t1)) t2) t3
+GROUP BY user_id,
+         base_dt HAVING count(1) >= 7;
 ```
 
 # 求不同性别每日分数累加和
