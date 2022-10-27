@@ -5,7 +5,7 @@ author: "marcelyz"
 ---
 
 # lc_603. Consecutive Available Seats
-自关联
+自关联：简单理解为笛卡尔积关联，on后面的是filter条件
 ```
 SELECT DISTINCT a.seat_id
 FROM Cinema a
