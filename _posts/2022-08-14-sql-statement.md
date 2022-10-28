@@ -54,7 +54,7 @@ WHERE res IS NOT NULL
 ```
 
 # lc_1454. 求连续5天登录的用户
-https://zhuanlan.zhihu.com/p/460403450  
+https://zhuanlan.zhihu.com/p/264789993  
 ```
 WITH tmp AS
   (SELECT a.id,
