@@ -53,25 +53,28 @@ FROM
 WHERE res IS NOT NULL
 ```
 
-# lc_1454. 求连续7天登录的用户
+# lc_1454. 求连续5天登录的用户
 https://zhuanlan.zhihu.com/p/460403450  
 ```
-SELECT user_id
-FROM
-  (SELECT *,
-          date_sub(t2.dt, interval rn DAY) AS base_dt
-   FROM
-     (SELECT *,
-             row_number() over(partition BY t1.user_id
-                               ORDER BY t1.dt) AS rn
-      FROM
-        (SELECT user_id,
-                substring(dt, 1, 10) AS dt
-         FROM log_table
-         GROUP BY user_id,
-                  substring(dt, 1, 10) t1)) t2) t3
-GROUP BY user_id,
-         base_dt HAVING count(1) >= 7;
+WITH tmp AS
+  (SELECT a.id,
+          a.name,
+          b.login_date,
+          row_number() over(partition BY a.id
+                            ORDER BY b.login_date) AS rnk,
+                       datediff(b.login_date, '2022-01-01') AS diff
+   FROM Accounts AS a
+   LEFT JOIN
+     (SELECT DISTINCT id,
+                      login_date
+      FROM Logins) AS b ON a.id = b.id)
+
+
+SELECT DISTINCT id,
+                name
+FROM tmp
+GROUP BY id,
+         diff-rnk HAVING count(name) >= 5;
 ```
 
 # lc_1308. 求不同性别每日分数累加和
